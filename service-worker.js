@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tatak-cash/precache-manifest.68b032fc04a3848cacf0a1498392d38d.js"
+  "/tatak-cash/precache-manifest.7427b0d40e0fc17142f604d185911b4d.js"
 );
 
 self.addEventListener('message', (event) => {
