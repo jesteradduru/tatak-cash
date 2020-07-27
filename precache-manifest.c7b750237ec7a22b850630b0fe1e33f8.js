@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1b0d5199979db9a2db71c16e0c94bc97",
+    "revision": "5b7dc373b6859c9c2466f562d611828c",
     "url": "/tatak-cash/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tatak-cash/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "deceeab91ca5dfe670eb",
+    "revision": "9ef8a98a7067506a86d8",
     "url": "/tatak-cash/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tatak-cash/static/js/2.1cc5b274.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "deceeab91ca5dfe670eb",
-    "url": "/tatak-cash/static/js/main.7042edb5.chunk.js"
+    "revision": "9ef8a98a7067506a86d8",
+    "url": "/tatak-cash/static/js/main.97499ba0.chunk.js"
   },
   {
     "revision": "f450125fd04d4eae96a2",
