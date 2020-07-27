@@ -18,8 +18,8 @@ const Transactions = ({ transactions, onLogout, coh, sales, expenses }) => {
   });
   return (
     <Container>
-      <h1 className="text-center">Tatak Clothing Transactions</h1>
-      <div className="d-flex">
+      <h1 className="text-center mt-3">Tatak Clothing Transactions</h1>
+      <div className="d-flex mt-3">
         <Link to="/addtransaction" className="ml-auto">
           <Button color="primary">Add Transaction</Button>
         </Link>
@@ -33,7 +33,7 @@ const Transactions = ({ transactions, onLogout, coh, sales, expenses }) => {
           Logout
         </Button>
       </div>
-      <Table className="mt-4" dark>
+      <Table className="mt-4" dark responsive>
         <thead>
           <tr>
             <th>Name</th>
@@ -46,17 +46,17 @@ const Transactions = ({ transactions, onLogout, coh, sales, expenses }) => {
         <tbody>{transaction_lists}</tbody>
       </Table>
       <Row>
-        <Col>
+        <Col sm="12" md="4">
           <h4>
             Sales: <span className="text-info">{sales}</span>
           </h4>
         </Col>
-        <Col>
+        <Col sm="12" md="4">
           <h4>
             Expenses: <span className="text-danger">{expenses}</span>
           </h4>
         </Col>
-        <Col>
+        <Col sm="12" md="4">
           <h4>
             Cash-On-Hand: <span className="text-success">{coh}</span>
           </h4>

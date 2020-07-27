@@ -18,14 +18,14 @@ class App extends React.Component {
   }
 
   onLogin = () => {
-    cookies.set("isSignedIn", true);
+    cookies.set("isSignedIn", true, { path: "/tatak-cash" });
     this.setState({
       isSignedIn: true,
     });
   };
 
   onLogout = () => {
-    cookies.set("isSignedIn", "");
+    cookies.set("isSignedIn", "", { path: "/tatak-cash" });
     this.setState({
       isSignedIn: false,
     });
@@ -70,7 +70,7 @@ class App extends React.Component {
           <Switch>
             <Route
               exact
-              path="/"
+              path="/tatak-cash"
               children={
                 <Transactions
                   transactions={this.state.transactions}
