@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3aee3273c630ab20b29f0570bc917df3",
+    "revision": "39400252375b9ff6169180bb70b18680",
     "url": "/tatak-cash/index.html"
   },
   {

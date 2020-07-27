@@ -1,19 +1,19 @@
 {
-  "short_name": "Tatak Cash Transactions",
-  "name": "Tatak Clothing PH Cash Transactions Record",
+  "short_name": "Tatak Clothing Transactions",
+  "name": "Tatak Clothing PH Transactions Record",
   "icons": [
     {
-      "src": "logotext.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logotext.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logotext.png",
+      "src": "logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
