@@ -25,6 +25,7 @@ class App extends React.Component {
   };
 
   onLogout = () => {
+    cookies.set("isSignedIn", "");
     this.setState({
       isSignedIn: false,
     });
