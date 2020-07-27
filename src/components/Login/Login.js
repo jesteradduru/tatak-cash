@@ -12,7 +12,7 @@ class Login extends React.Component {
   }
   onLogin = (event) => {
     event.preventDefault();
-    fetch("http://localhost:5000/login", {
+    fetch("https://tatak-cash-api.herokuapp.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

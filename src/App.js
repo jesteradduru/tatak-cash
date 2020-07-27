@@ -31,7 +31,7 @@ class App extends React.Component {
   };
 
   loadTransactions = () => {
-    fetch("http://localhost:5000/transactions")
+    fetch("https://tatak-cash-api.herokuapp.com/transactions")
       .then((res) => res.json())
       .then((data) => {
         this.setState({ transactions: data });

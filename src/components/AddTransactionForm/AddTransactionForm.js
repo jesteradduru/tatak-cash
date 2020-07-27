@@ -24,7 +24,7 @@ class AddTransactionForm extends React.Component {
   addTransaction = (e) => {
     e.preventDefault();
     this.setState({ isLoading: true, loaderHidden: false });
-    fetch("http://localhost:5000/addtransaction", {
+    fetch("https://tatak-cash-api.herokuapp.com/addtransaction", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
