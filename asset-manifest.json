@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/jesteradduru/tatak-cash.git/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/jesteradduru/tatak-cash.git/static/js/main.217f4eed.chunk.js",
+    "main.js.map": "/jesteradduru/tatak-cash.git/static/js/main.217f4eed.chunk.js.map",
+    "runtime-main.js": "/jesteradduru/tatak-cash.git/static/js/runtime-main.cec2a955.js",
+    "runtime-main.js.map": "/jesteradduru/tatak-cash.git/static/js/runtime-main.cec2a955.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/jesteradduru/tatak-cash.git/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.1cc5b274.chunk.js": "/jesteradduru/tatak-cash.git/static/js/2.1cc5b274.chunk.js",
+    "static/js/2.1cc5b274.chunk.js.map": "/jesteradduru/tatak-cash.git/static/js/2.1cc5b274.chunk.js.map",
+    "index.html": "/jesteradduru/tatak-cash.git/index.html",
+    "precache-manifest.f83ed58b646bf712ea526e84e0110afb.js": "/jesteradduru/tatak-cash.git/precache-manifest.f83ed58b646bf712ea526e84e0110afb.js",
+    "service-worker.js": "/jesteradduru/tatak-cash.git/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/jesteradduru/tatak-cash.git/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/jesteradduru/tatak-cash.git/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.1cc5b274.chunk.js.LICENSE.txt": "/jesteradduru/tatak-cash.git/static/js/2.1cc5b274.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cec2a955.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.1cc5b274.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.217f4eed.chunk.js"
+  ]
+}
