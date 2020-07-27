@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/jesteradduru/tatak-cash/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/jesteradduru/tatak-cash/static/js/main.e7e990d8.chunk.js",
-    "main.js.map": "/jesteradduru/tatak-cash/static/js/main.e7e990d8.chunk.js.map",
-    "runtime-main.js": "/jesteradduru/tatak-cash/static/js/runtime-main.ccaea360.js",
-    "runtime-main.js.map": "/jesteradduru/tatak-cash/static/js/runtime-main.ccaea360.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/jesteradduru/tatak-cash/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.1cc5b274.chunk.js": "/jesteradduru/tatak-cash/static/js/2.1cc5b274.chunk.js",
-    "static/js/2.1cc5b274.chunk.js.map": "/jesteradduru/tatak-cash/static/js/2.1cc5b274.chunk.js.map",
-    "index.html": "/jesteradduru/tatak-cash/index.html",
-    "precache-manifest.c08f770592518c4bbff307c7fdea5c4e.js": "/jesteradduru/tatak-cash/precache-manifest.c08f770592518c4bbff307c7fdea5c4e.js",
-    "service-worker.js": "/jesteradduru/tatak-cash/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/jesteradduru/tatak-cash/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/jesteradduru/tatak-cash/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.1cc5b274.chunk.js.LICENSE.txt": "/jesteradduru/tatak-cash/static/js/2.1cc5b274.chunk.js.LICENSE.txt"
+    "main.css": "/tatak-cash/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/tatak-cash/static/js/main.99b4b5b9.chunk.js",
+    "main.js.map": "/tatak-cash/static/js/main.99b4b5b9.chunk.js.map",
+    "runtime-main.js": "/tatak-cash/static/js/runtime-main.99cbc2fe.js",
+    "runtime-main.js.map": "/tatak-cash/static/js/runtime-main.99cbc2fe.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/tatak-cash/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.1cc5b274.chunk.js": "/tatak-cash/static/js/2.1cc5b274.chunk.js",
+    "static/js/2.1cc5b274.chunk.js.map": "/tatak-cash/static/js/2.1cc5b274.chunk.js.map",
+    "index.html": "/tatak-cash/index.html",
+    "precache-manifest.68b032fc04a3848cacf0a1498392d38d.js": "/tatak-cash/precache-manifest.68b032fc04a3848cacf0a1498392d38d.js",
+    "service-worker.js": "/tatak-cash/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/tatak-cash/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/tatak-cash/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.1cc5b274.chunk.js.LICENSE.txt": "/tatak-cash/static/js/2.1cc5b274.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ccaea360.js",
+    "static/js/runtime-main.99cbc2fe.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.1cc5b274.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.e7e990d8.chunk.js"
+    "static/js/main.99b4b5b9.chunk.js"
   ]
 }
