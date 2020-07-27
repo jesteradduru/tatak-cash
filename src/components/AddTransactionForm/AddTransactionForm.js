@@ -48,7 +48,7 @@ class AddTransactionForm extends React.Component {
     return (
       <Container>
         <h1 className="text-center mb-3">Transaction Form</h1>
-        <Container className="w-75 mx-auto">
+        <Container className="mx-auto">
           <Form onSubmit={(e) => this.addTransaction(e)}>
             <FormGroup>
               <Label>Name:</Label>
