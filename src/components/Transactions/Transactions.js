@@ -20,7 +20,7 @@ const Transactions = ({ transactions, onLogout, coh, sales, expenses }) => {
     <Container>
       <h1 className="text-center mt-3">Tatak Clothing Transactions</h1>
       <div className="d-flex mt-3">
-        <Link to="/addtransaction" className="ml-auto">
+        <Link to="/tatak-cash/addtransaction" className="ml-auto">
           <Button color="primary">Add Transaction</Button>
         </Link>
         <Button

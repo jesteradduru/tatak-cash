@@ -36,7 +36,7 @@ class App extends React.Component {
       .then((res) => res.json())
       .then((data) => {
         this.setState({ transactions: data });
-        this.computeTransactions();
+        this.computeTransactions(data);
       })
       .catch(console.log);
   };
@@ -48,13 +48,13 @@ class App extends React.Component {
     }
   }
 
-  computeTransactions = () => {
-    const SALES = this.state.transactions
+  computeTransactions = (transactions) => {
+    const SALES = transactions
       .filter((transaction) => transaction.type === "Sales")
       .reduce((accumulator, transaction) => {
         return accumulator + Number(transaction.amount);
       }, 0);
-    const EXPENSES = this.state.transactions
+    const EXPENSES = transactions
       .filter((transaction) => transaction.type === "Expenses")
       .reduce((accumulator, transaction) => {
         return accumulator + Number(transaction.amount);
@@ -83,7 +83,7 @@ class App extends React.Component {
             />
             <Route
               exact
-              path="/addtransaction"
+              path="/tatak-cash/addtransaction"
               children={
                 <AddTransactionForm
                   goBack={this.prevPage}

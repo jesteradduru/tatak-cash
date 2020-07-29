@@ -1,6 +1,7 @@
 import React from "react";
 import { Input, Button, Card, FormGroup, Form } from "reactstrap";
 import ErrorMessage from "../ErroMessage/ErrorMessage";
+import Loader from "../Loader/Loader";
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -8,10 +9,13 @@ class Login extends React.Component {
       username: "",
       password: "",
       error: "",
+      isLoading: false,
+      loaderHidden: true,
     };
   }
   onLogin = (event) => {
     event.preventDefault();
+    this.setState({ isLoading: true, loaderHidden: false });
     fetch("https://tatak-cash-api.herokuapp.com/login", {
       method: "POST",
       headers: {
@@ -25,10 +29,12 @@ class Login extends React.Component {
       .then((res) => res.json())
       .then((data) => {
         if (data.verified) {
+          this.setState({ isLoading: false });
           this.props.onLogin();
           this.props.loadTransactions();
         } else {
           this.setState({ error: data });
+          this.setState({ isLoading: false, loaderHidden: true });
         }
       })
       .catch(console.log);
@@ -66,6 +72,14 @@ class Login extends React.Component {
               type="password"
               placeholder="Password"
               onKeyUp={this.onPasswordChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            {" "}
+            <Loader
+              isLoading={this.state.isLoading}
+              text="Login Successful"
+              hidden={this.state.loaderHidden}
             />
           </FormGroup>
           <ErrorMessage errMsg={this.state.error} />

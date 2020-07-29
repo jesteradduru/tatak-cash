@@ -6,7 +6,7 @@ const Loader = ({ isLoading, text, hidden }) => {
     if (isLoading) {
       return (
         <div>
-          <Spinner color="primary" className="mx-auto d-block" />
+          <Spinner color="danger" type="grow" className="mx-auto d-block" />
         </div>
       );
     } else {
