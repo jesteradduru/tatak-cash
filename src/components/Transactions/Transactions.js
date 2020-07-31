@@ -3,13 +3,14 @@ import { Container, Table, Button, Col, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 const Transactions = ({ transactions, onLogout, coh, sales, expenses }) => {
   const transaction_lists = transactions.map((transaction) => {
+    const date = new Date(transaction.trans_date);
     return (
       <tr
         key={transaction.id}
         className={transaction.type === "Expenses" ? "bg-danger" : "bg-success"}
       >
         <td>{transaction.name}</td>
-        <td>{transaction.trans_date}</td>
+        <td>{date.toDateString()}</td>
         <td>{transaction.transaction}</td>
         <td>{transaction.type}</td>
         <td>{transaction.amount}</td>
