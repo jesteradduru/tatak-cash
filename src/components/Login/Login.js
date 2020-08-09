@@ -2,6 +2,7 @@ import React from "react";
 import { Input, Button, Card, FormGroup, Form } from "reactstrap";
 import ErrorMessage from "../ErroMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
+
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -32,6 +33,7 @@ class Login extends React.Component {
           this.setState({ isLoading: false });
           this.props.onLogin();
           this.props.loadTransactions();
+          window.location.href = "https://jesteradduru.github.io/tatak-cash";
         } else {
           this.setState({ error: data });
           this.setState({ isLoading: false, loaderHidden: true });

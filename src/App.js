@@ -5,6 +5,7 @@ import Login from "./components/Login/Login";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
+
 class App extends React.Component {
   constructor() {
     super();
