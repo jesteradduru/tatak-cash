@@ -1,7 +1,14 @@
 import React from "react";
 import { Container, Table, Button, Col, Row } from "reactstrap";
 import { Link } from "react-router-dom";
-const Transactions = ({ transactions, onLogout, coh, sales, expenses }) => {
+const Transactions = ({
+  transactions,
+  onLogout,
+  coh,
+  sales,
+  expenses,
+  isSignedIn,
+}) => {
   const transaction_lists = transactions.map((transaction) => {
     const date = new Date(transaction.trans_date);
     return (
@@ -17,23 +24,31 @@ const Transactions = ({ transactions, onLogout, coh, sales, expenses }) => {
       </tr>
     );
   });
+
+  const controls = (isSignedIn) => {
+    if (isSignedIn) {
+      return (
+        <div className="d-flex mt-3">
+          <Link to="/tatak-cash/addtransaction" className="ml-auto">
+            <Button color="primary">Add Transaction</Button>
+          </Link>
+          <Button
+            color="danger"
+            className="ml-3"
+            onClick={() => {
+              onLogout();
+            }}
+          >
+            Logout
+          </Button>
+        </div>
+      );
+    }
+  };
   return (
     <Container>
       <h1 className="text-center mt-3">Tatak Clothing Transactions</h1>
-      <div className="d-flex mt-3">
-        <Link to="/tatak-cash/addtransaction" className="ml-auto">
-          <Button color="primary">Add Transaction</Button>
-        </Link>
-        <Button
-          color="danger"
-          className="ml-3"
-          onClick={() => {
-            onLogout();
-          }}
-        >
-          Logout
-        </Button>
-      </div>
+      {controls(isSignedIn)}
       <Table className="mt-4" dark responsive>
         <thead>
           <tr>

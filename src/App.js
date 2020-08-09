@@ -45,6 +45,8 @@ class App extends React.Component {
     if (cookies.get("isSignedIn")) {
       this.onLogin();
       this.loadTransactions();
+    } else {
+      this.loadTransactions();
     }
   }
 
@@ -63,45 +65,48 @@ class App extends React.Component {
 
     this.setState({ coh: CASHONHAND, sales: SALES, expenses: EXPENSES });
   };
+
   render() {
-    if (this.state.isSignedIn) {
-      return (
-        <Router>
-          <Switch>
-            <Route
-              exact
-              path="/tatak-cash"
-              children={
-                <Transactions
-                  transactions={this.state.transactions}
-                  onLogout={this.onLogout}
-                  sales={this.state.sales}
-                  coh={this.state.coh}
-                  expenses={this.state.expenses}
-                />
-              }
-            />
-            <Route
-              exact
-              path="/tatak-cash/addtransaction"
-              children={
-                <AddTransactionForm
-                  goBack={this.prevPage}
-                  loadTransactions={this.loadTransactions}
-                />
-              }
-            />
-          </Switch>
-        </Router>
-      );
-    } else {
-      return (
-        <Login
-          onLogin={this.onLogin}
-          loadTransactions={this.loadTransactions}
-        />
-      );
-    }
+    return (
+      <Router>
+        <Switch>
+          <Route
+            exact
+            path="/tatak-cash"
+            children={
+              <Transactions
+                transactions={this.state.transactions}
+                onLogout={this.onLogout}
+                sales={this.state.sales}
+                coh={this.state.coh}
+                expenses={this.state.expenses}
+                isSignedIn={this.state.isSignedIn}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/tatak-cash/addtransaction"
+            children={
+              <AddTransactionForm
+                goBack={this.prevPage}
+                loadTransactions={this.loadTransactions}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/tatak-cash/admin"
+            children={
+              <Login
+                onLogin={this.onLogin}
+                loadTransactions={this.loadTransactions}
+              />
+            }
+          />
+        </Switch>
+      </Router>
+    );
   }
 }
 
