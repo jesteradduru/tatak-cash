@@ -43,6 +43,14 @@ const Transactions = ({
           </Button>
         </div>
       );
+    } else {
+      return (
+        <div className="d-flex mt-3">
+          <Link to="/tatak-cash/admin" className="ml-auto">
+            <Button color="primary">Login</Button>
+          </Link>
+        </div>
+      );
     }
   };
   return (
